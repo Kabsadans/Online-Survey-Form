@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+    <h1 id="title">BrandAktiv8 💝 Survey Form</h1>
+    <p id="description">Please help us improve our service by filling the survey</p>   
+    <form id="survey-form">
+      
+      <fieldset>
+        <label id="name-label">Name <input type="text" id="name" name="name"  placeholder="Enter your name" reqiured /> </label>
+        <label id="email-label">Email <input type="email" id="email" name="email" placeholder="Enter your Email" required/> </label>
+        <label id="number-label">Age (optional) <input type="number" id="number" name="Age" placeholder="Enter your Age" min="13" max="120" /> </label>
+        
+        
+      </fieldset>
+
+      <fieldset>
+        <label>Which option best describes your current role?
+          <select id="dropdown" name="role">
+            <option>Select current role</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+
+          </select>
+        </label>
+
+        <label>
+          Would you recommend BrandAktiv8 to a friend?
+          <input type="radio" name="user-recommend" value="definitely" class="inline" />Definitely
+        </label>
+
+         <label>
+          <input type="radio" name="user-recommend" value="maybe" class="inline" />Maybe
+        </label>
+
+         <label>
+          <input type="radio" name="user-recommend" value="not sure" class="inline" />Not sure
+        </label>
+
+        <label>What most attracted you to BrandAktiv8?
+          <select id="dropdown" name="fav_feature">
+            <option value="">Select an option</option>
+            <option value="1">Service</option>
+            <option value="2">Products</option>
+            <option value="3">Promotional Offers</option>
+            <option value="4">Quality Staff</option>
+          </select>
+        </label>
+      </fieldset>
+  
+      <fieldset>
+        <label>What would you like to see improved? (Check all that apply)
+          <input type="checkbox" name="prefer" value="front-end-projects" class="inline" />Customer Service
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="back-end-projects" class="inline" />Product Offering
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="data-visualization" class="inline" />Staff Engagement
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="challenges" class="inline" />Pricing
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="open-source-community" class="inline" />Community Outreach Programs
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="gitter-help-rooms" class="inline" />Online Presence
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="videos" class="inline" /> Youtube Videos
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="city-meetups" class="inline" />Competitions
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="wiki" class="inline" />Website UI/UX
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="forum" class="inline" />Forum
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="additional-courses" class="inline" />Additional Branches
+        </label>
+
+        <label>
+          Any comments or suggestions? <textarea name="suggestions" rows="5" cols="60" placeholder="Enter your comment here..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" >
+
+    </form>
+    </div>
+  </body>
+
+</html>
